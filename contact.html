@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - The Royal Bite</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <h1 class="display-4">Contact Us: The Royal Bite</h1>
+      <p class="lead">We would love to hear from you!</p>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">The Royal Bite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="container py-5">
+    <h2 class="mb-4 text-center">Our Location</h2>
+    <p class="text-center">678 Flavor Lane, The Royal Bite HQ, Makkah, KSA, 89012</p>
+    <p class="text-center"><strong>Email:</strong> TheRoyalBite@gmail.com</p>
+    <p class="text-center"><strong>Phone:</strong> +966(234)577-9800</p>
+
+    <h2 class="mt-5 mb-4 text-center">Make a Reservation</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form action="submit_form.html" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-danger btn-block">Reserve Table</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-0">&copy; 2025 The Royal Bite | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
